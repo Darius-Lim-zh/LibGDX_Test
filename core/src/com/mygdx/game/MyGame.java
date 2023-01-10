@@ -4,6 +4,7 @@ import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector3;
@@ -19,7 +20,7 @@ import com.badlogic.gdx.utils.TimeUtils;
 
 import java.util.Iterator;
 
-public class MyGdxGame extends ApplicationAdapter {
+public class MyGame extends ApplicationAdapter {
 	private OrthographicCamera camera;
 	private SpriteBatch batch;
 	//Texture img;
@@ -30,6 +31,7 @@ public class MyGdxGame extends ApplicationAdapter {
 	private Rectangle bucket;
 	private Array<Rectangle> raindrops;
 	private long lastDropTime;
+	private BitmapFont font;
 	
 	@Override
 	public void create () {
